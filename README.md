@@ -1,2 +1,2 @@
 # numpy-vectores-matrices
-Matrices multidimensionales con numpy
+Arreglos multidimensionales con numpy
