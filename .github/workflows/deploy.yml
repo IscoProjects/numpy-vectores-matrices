@@ -32,7 +32,7 @@ jobs:
         env:
           BASE_URL: /${{ github.event.repository.name }}
         run: |
-          jupyter book build --htm
+          jupyter book build --html
 
       - name: Subir artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v3
