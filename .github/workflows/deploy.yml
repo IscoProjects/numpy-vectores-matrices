@@ -29,8 +29,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Construir Jupyter Book
+        env:
+          BASE_URL: /${{ github.event.repository.name }}
         run: |
-          jupyter-book build --html
+          myst build --html --base-url "/${{ github.event.repository.name }}"
 
       - name: Subir artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v3
