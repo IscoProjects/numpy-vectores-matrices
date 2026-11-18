@@ -1,0 +1,22 @@
+# Compilación y caché de Jupyter Book
+_build/
+.jupyter_cache/
+
+# Checkpoints de Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos y editores
+.venv/
+venv/
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
