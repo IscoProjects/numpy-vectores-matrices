@@ -5,6 +5,9 @@ project:
     - name: "II"
   copyright: "2026"
   github: https://github.com/IscoProjects/numpy-vectores-matrices
+  branch: main
+  jupyter:
+    colab: true
   toc:
     - file: intro.md
     - title: Fundamentos y Estructura
