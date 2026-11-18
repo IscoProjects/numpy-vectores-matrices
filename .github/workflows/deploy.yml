@@ -32,7 +32,7 @@ jobs:
         env:
           BASE_URL: /${{ github.event.repository.name }}
         run: |
-          myst build --html --base-url "/${{ github.event.repository.name }}"
+          jupyter-book build --html --base-url "/${{ github.event.repository.name }}"
 
       - name: Subir artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v3
