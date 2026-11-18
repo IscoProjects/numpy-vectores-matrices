@@ -1,0 +1,28 @@
+version: 1
+project:
+  title: "NumPy: Vectores y Matrices"
+  authors:
+    - name: "II"
+  copyright: "2026"
+  github: https://github.com/IscoProjects/numpy-vectores-matrices
+  toc:
+    - file: intro.md
+    - title: Fundamentos y Estructura
+      children:
+        - file: notebooks/01_anatomia_y_creacion.ipynb
+        - file: notebooks/02_indexacion_slicing_filtros.ipynb
+        - file: notebooks/03_forma_union_division.ipynb
+    - title: Operaciones y Cálculo Matricial
+      children:
+        - file: notebooks/04_aritmetica_broadcasting.ipynb
+        - file: notebooks/05_estadistica_y_escalas.ipynb
+        - file: notebooks/06_ordenamiento_y_busqueda.ipynb
+        - file: notebooks/07_algebra_lineal.ipynb
+    - title: Práctica Integradora
+      children:
+        - file: ejercicios/taller_practico.ipynb
+
+site:
+  template: book-theme
+  options:
+    folders: true
