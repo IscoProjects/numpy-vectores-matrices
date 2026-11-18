@@ -30,12 +30,12 @@ jobs:
 
       - name: Construir Jupyter Book
         run: |
-          jupyter-book build .
+          jupyter-book build --html
 
       - name: Subir artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _build/html
+          path: _build/site/public
 
       - name: Desplegar en GitHub Pages
         uses: actions/deploy-pages@v4
